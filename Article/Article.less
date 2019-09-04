@@ -1,5 +1,23 @@
+@keyframes slidedown {
+  0% {
+    height: 50px;
+  }
+  100% {
+    height: auto;
+  }
+}
+
+@keyframes slideup {
+  100% {
+    height: auto;
+  }
+  0% {
+    height: 50px;
+  }
+}
+
 .articles {
-  margin-top: 95px;
+  margin-top: 145px;
 }
 .article {
   margin: 20px 10%;
@@ -10,6 +28,7 @@
   position: relative;
   height: 50px;
   overflow: hidden;
+  transition-duration: 0.3s;
   box-shadow: 2px 2px 2px lightgrey;
 
   h2 {
@@ -27,6 +46,22 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    width: 22.5px;
+    height: 22.5px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    background-color: maroon;
+    border: 2px solid transparent;
+    border-radius: 12.5px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+    &:hover {
+      color: maroon;
+      border: 2px solid maroon;
+      background-color: white;
+    }
   }
 
   .expandButton {
@@ -42,9 +77,5 @@
 }
 
 .article-open {
-  height: 400px;
+  height: 650px;
 }
-
-
-
-
